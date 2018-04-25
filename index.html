@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <h1 id="heading">Example Flow for Sudsidy</h1>
+    Serial ID:
+    <input type="text" id="sid" name="sid">
+    <button id="submit">Submit</button>
+    <br>
+    <br>
+    <button id="ride">Ride train</button>&nbsp;
+    <button id="wash">Wash hands</button>
+
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBdE1VFkMS7PhhR8k8sUMlSgZDBlolCoG0",
+            authDomain: "sudsidy.firebaseapp.com",
+            databaseURL: "https://sudsidy.firebaseio.com",
+            projectId: "sudsidy",
+            storageBucket: "sudsidy.appspot.com",
+            messagingSenderId: "471090633292"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
