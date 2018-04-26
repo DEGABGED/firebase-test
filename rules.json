@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "userRewards": {
+      "$user_id": {
+        ".read": "$user_id === auth.uid",
+        ".write": "root.child('arduinos/'+auth.uid).exists()",
+        ".validate": "newData.child('claimable').val() == data.child('claimable').val() - 1"
+      }
+    },
+      
+    "arduinos": {
+      "$arduino_id": {
+        ".read": "$arduino_id === auth.uid",
+        ".write": "$arduino_id === auth.uid"
+      }
+    }
+  }
+}
